@@ -11,11 +11,11 @@ end
 
 def print_first_directors_movie_titles
   movie = directors_database[0][:movies]
-  index = 0
+  id = 0
 
   while index < movie.length do
-    titles = movie[index][:title]
+    titles = movie[id][:title]
     puts titles
-    index +=1
+    id +=1
   end
 end
